@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:700,900|Montserrat:400,700|Raleway:100,200,300,400,500,600,700&display=swap");
+@import url(css/reset.css);
+@import url(css/responsive.css);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul, li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+h2 {
+  font-size: 124px;
+  font-weight: 700;
+  line-height: 120px;
+}
+
+h3 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 102.97px;
+  color: #ffffff;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+.main_p {
+  color: #3624ea;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1470px;
+  padding: 0 15px;
+}
+
+/*header*/
+.header-inner {
+  width: 100%;
+  min-height: 1200px;
+  padding-top: 50px;
+  background-image: url(../img/header_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 200px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  display: block;
+  max-width: 100px;
+  min-height: 100px;
+}
+
+.header__menu {
+  font-size: 0;
+}
+
+.header__menu li + li {
+  margin-left: 65px;
+}
+
+.header__menu a {
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.header__menu a:hover {
+  color: #18f7ef;
+}
+
+/*header-main-logo*/
+.header__text {
+  width: 100%;
+  min-height: 190px;
+  margin-top: 250px;
+  margin-bottom: 260px;
+  text-align: center;
+  font-size: 192px;
+  font-weight: 700;
+  color: white;
+}
+
+.header__text span {
+  background: linear-gradient(to right, #45f9f7 35%, #26ccc9 65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*header schroll*/
+.header__blackfill {
+  min-height: 250px;
+  background: linear-gradient(to top, black, rgba(255, 255, 255, 0));
+}
+
+.header__schroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 250px;
+}
+
+.header__schroll-img img {
+  max-width: 25px;
+  min-height: 35px;
+}
+
+.header__schroll-text {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+/*potrfolio-block(grid)*/
+.portfolio {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-inner {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  z-index: 1;
+}
+
+.portfolio__hello {
+  grid-column: 1/2;
+  grid-row: span 2;
+  padding-left: 110px;
+  background-color: #18f7ef;
+}
+
+.portfolio__hello h2 {
+  margin: 115px 125px 90px 0;
+  color: #fff;
+}
+
+.portfolio__hello h2 > span {
+  color: #3624ea;
+}
+
+.portfolio__hello p {
+  margin: 0 125px 92px 0;
+}
+
+.main__btn {
+  padding: 30px 40px;
+  background-color: transparent;
+  font-size: 24px;
+  font-weight: 700;
+  color: #3624ea;
+  border: 3px solid white;
+}
+
+.main__btn:hover {
+  cursor: pointer;
+  border: 3px solid #3624ea;
+  background-color: rgba(247, 247, 247, 0.7);
+}
+
+.portfolio__ltphoto1 {
+  max-width: 668px;
+  min-height: 614px;
+  background-color: greenyellow;
+  background-image: url(../img/grid_img1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portfolio__ltphoto2 {
+  max-width: 668px;
+  min-height: 614px;
+  background-color: green;
+  background-image: url(../img/grid_img2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portfolio__bigphoto1 {
+  grid-column: 2/4;
+  background-color: gray;
+  background-image: url(../img/grid_img3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portfolio__whiteblock {
+  background-color: #fff;
+}
+
+/*photographer(png)*/
+.portfolio__photoman {
+  position: absolute;
+  max-width: 660px;
+  min-height: 550px;
+  left: 135px;
+  bottom: -5px;
+  z-index: 5;
+}
+
+.portfolio__blueblock {
+  grid-column: 2/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3624ea;
+}
+
+.portfolio__blueblock-inner {
+  max-width: 765px;
+  margin: 0 auto;
+}
+
+.portfolio__blueblock-inner h3 {
+  margin-bottom: 30px;
+  font-size: 51px;
+  line-height: 48px;
+}
+
+.portfolio__blueblock-inner p {
+  margin-bottom: 40px;
+}
+
+.portfolio__blueblock-inner button {
+  color: #fff;
+}
+
+.portfolio__blueblock-inner button:hover {
+  border: 3px solid white;
+  background-color: rgba(247, 247, 247, 0.7);
+}
+
+.footer {
+  width: 100%;
+  min-height: 1640px;
+  background-image: url(../img/ft_blackwood.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer__content-top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 150px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer__content-top h3 {
+  font-weight: 400;
+}
+
+.footer__content-top p {
+  margin-top: 25px;
+  max-width: 720px;
+  text-align: left;
+}
+
+.footer__content-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 545px;
+}
+
+.ft__check-text {
+  margin-bottom: 150px;
+  margin-top: 20px;
+}
+
+.ft__logo {
+  display: block;
+  margin-bottom: 75px;
+}
